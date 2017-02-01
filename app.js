@@ -8,22 +8,22 @@ var svgDemo = (function () {
 
     var DOM = {},
         works = [{
-            imageUrl: "http://belcurv.com/portfolio/assets/portfolio-csv_parse.png",
+            imageUrl: "assets/portfolio-csv_parse.png",
             title: "CSV Parser"
         }, {
-            imageUrl: "http://belcurv.com/portfolio/assets/portfolio_album_app_auth.png",
+            imageUrl: "assets/portfolio_album_app_auth.png",
             title: "MEAN App with Authentication"
         }, {
-            imageUrl: "http://belcurv.com/portfolio/assets/portfolio_fishtank.png",
+            imageUrl: "assets/portfolio_fishtank.png",
             title: "Interactive Fish Tank"
         }, {
-            imageUrl: "http://belcurv.com/portfolio/assets/portfolio_album_app_md.png",
+            imageUrl: "assets/portfolio_album_app_md.png",
             title: "MEAN App with Angular Material"
         }, {
-            imageUrl: "http://belcurv.com/portfolio/assets/portfolio_dice_roll.png",
+            imageUrl: "assets/portfolio_dice_roll.png",
             title: "Interactive Dice Roll Sim"
         }, {
-            imageUrl: "http://belcurv.com/portfolio/assets/portfolio_basic_ejs.png",
+            imageUrl: "assets/portfolio_basic_ejs.png",
             title: "Boilerplate static site with EJS templates"
         }];
 
