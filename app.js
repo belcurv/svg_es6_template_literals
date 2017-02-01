@@ -2,7 +2,7 @@
 /* globals $, document */
 
 
-// ================== generate SVG macbook and iPad elements ==================
+// ================ module generates macbook and iPad elements ================
 var svgDemo = (function () {
     'use strict';
 
@@ -31,19 +31,6 @@ var svgDemo = (function () {
     // cache DOM elements
     function cacheDom() {
         DOM.$main = $('#main');
-    }
-
-
-    // render
-    function render() {
-
-        works.forEach(function (work) {
-
-            DOM.$main
-                .append(generateMacbook(work))
-                .append(generateIpad(work));
-        });
-
     }
 
 
@@ -76,6 +63,20 @@ var svgDemo = (function () {
             <image xlink:href="${work.imageUrl}" x="96" y="40" width="499.073853" height="290.009" preserveAspectRatio="xMidYMid slice"></image>
             <path d="M421,352 L421,355.087 C421,357.288 416.666719,357.952714 413.386719,357.952714 L278.815286,357.952714 C275.364286,357.952714 271,357.289 271,355.087 L271,352" id="touchpad" fill="#FFFFFF"></path>
             </g></svg>`;
+    }
+    
+    
+    // render
+    function render() {
+
+        // for each work in works, append a macbook and iPad to the DOM
+        works.forEach(function (work) {
+
+            DOM.$main
+                .append(generateMacbook(work))
+                .append(generateIpad(work));
+        });
+
     }
     
     
